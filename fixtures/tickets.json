@@ -1,0 +1,202 @@
+[
+  {
+    "id": "T-001",
+    "status": "closed",
+    "subject": "How do I cancel my subscription?",
+    "body": "Hi, I signed up for the Pro plan last month but I don't need it anymore. Where can I cancel so I am not charged again next month?",
+    "intent": "billing",
+    "priority": "normal",
+    "sentiment": "neutral",
+    "ideal_reply": "You can cancel anytime in Settings → Billing → Cancel plan. Your Pro features stay active until the end of the current billing period, and you will not be charged again."
+  },
+  {
+    "id": "T-002",
+    "status": "closed",
+    "subject": "Where is my invoice?",
+    "body": "I need an invoice for March for my accountant. I paid by card on March 3. Can you send it or tell me where to download it?",
+    "intent": "billing",
+    "priority": "normal",
+    "sentiment": "neutral",
+    "ideal_reply": "Open Settings → Billing → Invoices. Click Download PDF next to the March payment. If it is missing, reply with the email on the account and the approximate charge date."
+  },
+  {
+    "id": "T-003",
+    "status": "closed",
+    "subject": "Charged twice this month",
+    "body": "I see two charges of $12 on my statement for NoteFlow on April 1 and April 2. I only have one workspace. Please refund the duplicate.",
+    "intent": "billing",
+    "priority": "high",
+    "sentiment": "frustrated",
+    "ideal_reply": "Sorry about that. Duplicate charges usually happen if checkout was submitted twice. We will refund the extra $12 within 3–5 business days. Please confirm the last 4 digits of the card used."
+  },
+  {
+    "id": "T-004",
+    "status": "closed",
+    "subject": "How do I share a note with my team?",
+    "body": "I created a note called Sprint backlog. How do I let three teammates edit it without making the whole workspace public?",
+    "intent": "how-to",
+    "priority": "normal",
+    "sentiment": "neutral",
+    "ideal_reply": "Open the note → Share → Invite by email. Choose Can edit. They need an account in your workspace; the note stays private to invited people."
+  },
+  {
+    "id": "T-005",
+    "status": "closed",
+    "subject": "Can I export notes to Markdown?",
+    "body": "I want to move some notes to Obsidian. Is there an export to .md, and does it keep headings and checklists?",
+    "intent": "how-to",
+    "priority": "low",
+    "sentiment": "neutral",
+    "ideal_reply": "Yes. Select notes in the sidebar → … → Export → Markdown. Headings, lists, and checklists are preserved. Images export as a folder next to the .md files on Pro plans."
+  },
+  {
+    "id": "T-006",
+    "status": "closed",
+    "subject": "Keyboard shortcut for new note?",
+    "body": "Coming from Notion. What is the shortcut to create a new note on Mac?",
+    "intent": "how-to",
+    "priority": "low",
+    "sentiment": "positive",
+    "ideal_reply": "On Mac use Cmd+N for a new note in the current folder. Cmd+Shift+N creates a note in the inbox. Full list: Settings → Shortcuts."
+  },
+  {
+    "id": "T-007",
+    "status": "closed",
+    "subject": "Login link never arrives",
+    "body": "I requested a magic login link to alex@example.com three times. Nothing in inbox or spam. I cannot open my notes.",
+    "intent": "access",
+    "priority": "high",
+    "sentiment": "frustrated",
+    "ideal_reply": "Check spam and promotions for sender login@noteflow.app. Corporate filters sometimes block magic links—try a personal email alias or password login under Sign in → Use password. If still stuck, we can reset access after you confirm workspace name."
+  },
+  {
+    "id": "T-008",
+    "status": "closed",
+    "subject": "Cannot invite teammate — seat limit",
+    "body": "We are on Team plan for 5 seats. When I invite maria@company.com it says no seats left, but I only see 4 people in Members.",
+    "intent": "access",
+    "priority": "normal",
+    "sentiment": "confused",
+    "ideal_reply": "Pending invites also use a seat. Open Settings → Members → Pending and revoke unused invites, or upgrade seats under Billing. After a free seat appears, invite Maria again."
+  },
+  {
+    "id": "T-009",
+    "status": "closed",
+    "subject": "SSO with Google Workspace",
+    "body": "Our company uses Google Workspace. Can we force everyone to sign in with Google only and disable email magic links?",
+    "intent": "access",
+    "priority": "normal",
+    "sentiment": "neutral",
+    "ideal_reply": "On Team and Business plans go to Settings → Security → Enforce Google SSO. Magic links are disabled for that workspace after you save. Owners can still use emergency recovery codes."
+  },
+  {
+    "id": "T-010",
+    "status": "closed",
+    "subject": "App freezes when pasting large text",
+    "body": "Chrome on Windows. When I paste ~20 pages into a note the tab freezes for 30+ seconds and sometimes crashes. Happens since last week.",
+    "intent": "bug",
+    "priority": "high",
+    "sentiment": "frustrated",
+    "ideal_reply": "Thanks for the report—we reproduced a freeze on paste over ~50k characters in Chrome. Workaround: split the paste into smaller chunks or use Import → Markdown. A fix is planned in the next release; we will email you when it ships."
+  },
+  {
+    "id": "T-011",
+    "status": "closed",
+    "subject": "Search does not find yesterday's note",
+    "body": "I wrote a note titled Vendor comparison yesterday. Search for vendor returns nothing. The note is still in my private folder.",
+    "intent": "bug",
+    "priority": "normal",
+    "sentiment": "confused",
+    "ideal_reply": "Search can lag a few minutes after big edits. Try hard refresh, then Search → rebuild index (Settings → Data). If the note still missing, send the note URL and we will reindex your workspace."
+  },
+  {
+    "id": "T-012",
+    "status": "closed",
+    "subject": "Mobile app offline notes disappeared",
+    "body": "iOS app. I wrote two notes on a flight without internet. After landing they are gone. Please help recover them.",
+    "intent": "bug",
+    "priority": "critical",
+    "sentiment": "angry",
+    "ideal_reply": "Sorry—this is stressful. Offline drafts on iOS are stored locally until sync. Update to the latest app, open the note list while online, then pull to refresh. If still missing, email your account address and approximate titles; we can check server-side drafts from the last 7 days."
+  },
+  {
+    "id": "T-013",
+    "status": "closed",
+    "subject": "Dark mode breaks code blocks",
+    "body": "In dark mode, code block text is dark gray on black—almost unreadable. Light mode is fine. Mac Safari 17.",
+    "intent": "bug",
+    "priority": "low",
+    "sentiment": "neutral",
+    "ideal_reply": "We confirmed low contrast on code blocks in Safari dark mode. Temporary workaround: Settings → Appearance → Use light for editor only. A contrast fix is on the way."
+  },
+  {
+    "id": "T-014",
+    "status": "closed",
+    "subject": "Feature request: templates for meeting notes",
+    "body": "Every Monday I recreate the same meeting note structure. Could you add reusable templates we can share in a workspace?",
+    "intent": "feature",
+    "priority": "low",
+    "sentiment": "positive",
+    "ideal_reply": "Templates are on our roadmap for Team plans. Today you can duplicate a note via … → Duplicate and keep a Templates folder. We logged your vote for shared workspace templates."
+  },
+  {
+    "id": "T-015",
+    "status": "closed",
+    "subject": "API access for automations",
+    "body": "We want to create notes from Zapier when a form is submitted. Do you have a public API and where are the docs?",
+    "intent": "feature",
+    "priority": "normal",
+    "sentiment": "neutral",
+    "ideal_reply": "Public REST API is available on Pro and above. Create a token in Settings → Developers → API keys. Docs: https://docs.noteflow.app/api. Zapier actions for Create note are in beta—join from the Developers page."
+  },
+  {
+    "id": "T-016",
+    "status": "closed",
+    "subject": "Can guests view without an account?",
+    "body": "I need to send a read-only link to a client who should not create a NoteFlow account. Is that possible?",
+    "intent": "how-to",
+    "priority": "normal",
+    "sentiment": "neutral",
+    "ideal_reply": "Yes on Pro+. Open Share → Anyone with the link → Can view. Guests open a read-only page without signing up. Disable the link anytime from the same menu."
+  },
+  {
+    "id": "T-017",
+    "status": "closed",
+    "subject": "Upgrade from Free to Pro failed",
+    "body": "Checkout shows Payment declined even though my card works elsewhere. I tried Visa ending 4242. Still on Free plan.",
+    "intent": "billing",
+    "priority": "high",
+    "sentiment": "frustrated",
+    "ideal_reply": "Declines are often caused by bank 3-D Secure or blocking international charges. Ask your bank to allow NoteFlow / our payment provider, then retry Settings → Billing → Upgrade. If it fails again, try another card or reply for a manual invoice."
+  },
+  {
+    "id": "T-018",
+    "status": "closed",
+    "subject": "How to restore a deleted note?",
+    "body": "I deleted Project roadmap by mistake about an hour ago. Is there a trash?",
+    "intent": "how-to",
+    "priority": "high",
+    "sentiment": "frustrated",
+    "ideal_reply": "Open Trash in the sidebar (or Settings → Data → Trash). Deleted notes stay 30 days. Select Project roadmap → Restore. After 30 days recovery needs support and is not always possible."
+  },
+  {
+    "id": "T-019",
+    "status": "closed",
+    "subject": "Notifications for @mentions too noisy",
+    "body": "I get email for every @mention including my own when I mention myself while drafting. Can I turn emails off but keep in-app alerts?",
+    "intent": "how-to",
+    "priority": "low",
+    "sentiment": "neutral",
+    "ideal_reply": "Go to Settings → Notifications. Disable Email for Mentions and leave In-app on. Self-mentions while editing should not notify; if they still do, tell us your workspace id—we will check."
+  },
+  {
+    "id": "T-020",
+    "status": "closed",
+    "subject": "GDPR: delete my account and data",
+    "body": "Please permanently delete my NoteFlow account and all notes. Email: jordan.lee@example.com. I already exported what I need.",
+    "intent": "access",
+    "priority": "high",
+    "sentiment": "neutral",
+    "ideal_reply": "You can self-serve: Settings → Account → Delete account (type DELETE to confirm). Notes and backups are removed within 30 days. If the button is unavailable, reply from jordan.lee@example.com and we will process the deletion manually."
+  }
+]
