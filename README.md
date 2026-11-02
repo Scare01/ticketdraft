@@ -14,8 +14,18 @@ Early scaffold:
 
 - Seed data: [`fixtures/tickets.json`](fixtures/tickets.json) (20 closed NoteFlow tickets)
 - Env template: [`.env.example`](.env.example) (Anthropic / Claude)
+- Folder layout below (empty placeholders until each stage)
 
 App code (CLI triage → FastAPI → UI → RAG → evals → agent → MCP → deploy) will land step by step.
+
+## Layout
+
+```text
+fixtures/           seed tickets (JSON)
+backend/scripts/    CLI tools (Stage 1: triage)
+backend/app/        FastAPI app (Stage 2+)
+frontend/           Next.js UI (Stage 3+)
+```
 
 ## Stack (planned)
 
